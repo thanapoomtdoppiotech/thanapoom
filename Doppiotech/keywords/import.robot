@@ -1,7 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
 Library    String
-Library    BuiltIn
+
 
 
 Variables   ../resources/testdata/testdata.yaml
