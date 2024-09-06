@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-06T16:11:26.387433" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc01" source="C:\Users\Thanapoom.t\Desktop\Doppiotech\testcases\tc01.robot">
+<test id="s1-t1" name="tc01-testlocator" line="6">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-09-06T16:11:26.582525" elapsed="0.001022"/>
+</kw>
+<kw name="Open Doppee web" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-06T16:11:26.583547" level="INFO">Opening browser 'gc' to base url 'https://training-platform.doppio-tech.com'.</msg>
+<arg>${url}</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-06T16:11:26.583547" elapsed="2.379911"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-06T16:11:28.963966" elapsed="0.137611"/>
+</kw>
+<status status="PASS" start="2024-09-06T16:11:26.583547" elapsed="2.518030"/>
+</kw>
+<kw name="Click header person icon" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-06T16:11:29.105994" level="INFO">Clicking element 'xpath=//span[@aria-label='user']'.</msg>
+<arg>${header_locator.click_icon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T16:11:29.103992" elapsed="0.317643"/>
+</kw>
+<status status="PASS" start="2024-09-06T16:11:29.102971" elapsed="0.318664"/>
+</kw>
+<kw name="user login success" owner="login_features">
+<kw name="Input username to login" owner="login_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${login_locator.input_username}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-06T16:11:29.423853" elapsed="0.232604"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T16:11:29.657477" level="INFO">Typing text 'tiqsc@gmail.com' into text field 'xpath=//span[input[@type='text']]//input'.</msg>
+<arg>${login_locator.input_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T16:11:29.656457" elapsed="0.416963"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-09-06T16:11:29.423853" elapsed="0.649567"/>
+</kw>
+<kw name="Input password to login" owner="login_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${login_locator.input_password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-06T16:11:30.075454" elapsed="0.238213"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T16:11:30.314691" level="INFO">Typing text 'TTtt123*' into text field 'xpath=//span[input[@type='password']]//input'.</msg>
+<arg>${login_locator.input_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T16:11:30.313667" elapsed="0.392688"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-09-06T16:11:30.074543" elapsed="0.631812"/>
+</kw>
+<kw name="Click to login" owner="login_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${login_locator.click_login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-06T16:11:30.708552" elapsed="0.228603"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-06T16:11:30.937155" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${login_locator.click_login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T16:11:30.937155" elapsed="0.575501"/>
+</kw>
+<status status="PASS" start="2024-09-06T16:11:30.707305" elapsed="0.805351"/>
+</kw>
+<kw name="Click pop up" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${common.click_popup}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-06T16:11:31.513274" elapsed="0.236818"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-06T16:11:31.751155" level="INFO">Clicking button 'xpath=//*[@class='css-eq3tly ant-btn ant-btn-primary']'.</msg>
+<arg>${common.click_popup}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T16:11:31.750092" elapsed="0.630734"/>
+</kw>
+<status status="PASS" start="2024-09-06T16:11:31.513274" elapsed="0.867552"/>
+</kw>
+<arg>${user.username_input}</arg>
+<arg>${password.password_input}</arg>
+<status status="PASS" start="2024-09-06T16:11:29.422785" elapsed="2.958041"/>
+</kw>
+<kw name="Search product" owner="search_features">
+<kw name="input product" owner="search_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${search_locator.input_text}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-06T16:11:32.382786" elapsed="0.230507"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T16:11:32.614340" level="INFO">Typing text 'phone' into text field 'xpath=//*[@placeholder='input search text']'.</msg>
+<arg>${search_locator.input_text}</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T16:11:32.613293" elapsed="0.393188"/>
+</kw>
+<arg>${product}</arg>
+<status status="PASS" start="2024-09-06T16:11:32.382786" elapsed="0.623695"/>
+</kw>
+<kw name="Click search button" owner="search_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-09-06T16:11:33.130870" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72BADB5D2+29090]
+	(No symbol) [0x00007FF72BA4E689]
+	(No symbol) [0x00007FF72B90B1CA]
+	(No symbol) [0x00007FF72B8DFAF5]
+	(No symbol) [0x00007FF72B98E2E7]
+	(No symbol) [0x00007FF72B9A5EE1]
+	(No symbol) [0x00007FF72B986493]
+	(No symbol) [0x00007FF72B9509B1]
+	(No symbol) [0x00007FF72B951B11]
+	GetHandleVerifier [0x00007FF72BDF8C5D+3295277]
+	GetHandleVerifier [0x00007FF72BE44843+3605523]
+	GetHandleVerifier [0x00007FF72BE3A707+3564247]
+	GetHandleVerifier [0x00007FF72BB96EB6+797318]
+	(No symbol) [0x00007FF72BA5980F]
+	(No symbol) [0x00007FF72BA553F4]
+	(No symbol) [0x00007FF72BA55580]
+	(No symbol) [0x00007FF72BA44A1F]
+	BaseThreadInitThunk [0x00007FFEEA48257D+29]
+	RtlUserThreadStart [0x00007FFEEC72AF28+40]
+</msg>
+<msg time="2024-09-06T16:11:33.135882" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72BADB5D2+29090]
+	(No symbol) [0x00007FF72BA4E689]
+	(No symbol) [0x00007FF72B90B1CA]
+	(No symbol) [0x00007FF72B8DFAF5]
+	(No symbol) [0x00007FF72B98E2E7]
+	(No symbol) [0x00007FF72B9A5EE1]
+	(No symbol) [0x00007FF72B986493]
+	(No symbol) [0x00007FF72B9509B1]
+	(No symbol) [0x00007FF72B951B11]
+	GetHandleVerifier [0x00007FF72BDF8C5D+3295277]
+	GetHandleVerifier [0x00007FF72BE44843+3605523]
+	GetHandleVerifier [0x00007FF72BE3A707+3564247]
+	GetHandleVerifier [0x00007FF72BB96EB6+797318]
+	(No symbol) [0x00007FF72BA5980F]
+	(No symbol) [0x00007FF72BA553F4]
+	(No symbol) [0x00007FF72BA55580]
+	(No symbol) [0x00007FF72BA44A1F]
+	BaseThreadInitThunk [0x00007FFEEA48257D+29]
+	RtlUserThreadStart [0x00007FFEEC72AF28+40]
+</msg>
+<arg>${search_locator.click_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-09-06T16:11:33.007588" elapsed="0.131780">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72BADB5D2+29090]
+	(No symbol) [0x00007FF72BA4E689]
+	(No symbol) [0x00007FF72B90B1CA]
+	(No symbol) [0x00007FF72B8DFAF5]
+	(No symbol) [0x00007FF72B98E2E7]
+	(No symbol) [0x00007FF72B9A5EE1]
+	(No symbol) [0x00007FF72B986493]
+	(No symbol) [0x00007FF72B9509B1]
+	(No symbol) [0x00007FF72B951B11]
+	GetHandleVerifier [0x00007FF72BDF8C5D+3295277]
+	GetHandleVerifier [0x00007FF72BE44843+3605523]
+	GetHandleVerifier [0x00007FF72BE3A707+3564247]
+	GetHandleVerifier [0x00007FF72BB96EB6+797318]
+	(No symbol) [0x00007FF72BA5980F]
+	(No symbol) [0x00007FF72BA553F4]
+	(No symbol) [0x00007FF72BA55580]
+	(No symbol) [0x00007FF72BA44A1F]
+	BaseThreadInitThunk [0x00007FFEEA48257D+29]
+	RtlUserThreadStart [0x00007FFEEC72AF28+40]
+</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${search_locator.click_search}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-09-06T16:11:33.139368" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-06T16:11:33.006481" elapsed="0.132887">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72BADB5D2+29090]
+	(No symbol) [0x00007FF72BA4E689]
+	(No symbol) [0x00007FF72B90B1CA]
+	(No symbol) [0x00007FF72B8DFAF5]
+	(No symbol) [0x00007FF72B98E2E7]
+	(No symbol) [0x00007FF72B9A5EE1]
+	(No symbol) [0x00007FF72B986493]
+	(No symbol) [0x00007FF72B9509B1]
+	(No symbol) [0x00007FF72B951B11]
+	GetHandleVerifier [0x00007FF72BDF8C5D+3295277]
+	GetHandleVerifier [0x00007FF72BE44843+3605523]
+	GetHandleVerifier [0x00007FF72BE3A707+3564247]
+	GetHandleVerifier [0x00007FF72BB96EB6+797318]
+	(No symbol) [0x00007FF72BA5980F]
+	(No symbol) [0x00007FF72BA553F4]
+	(No symbol) [0x00007FF72BA55580]
+	(No symbol) [0x00007FF72BA44A1F]
+	BaseThreadInitThunk [0x00007FFEEA48257D+29]
+	RtlUserThreadStart [0x00007FFEEC72AF28+40]
+</status>
+</kw>
+<arg>${pd_n.product_name}</arg>
+<status status="FAIL" start="2024-09-06T16:11:32.381773" elapsed="0.757595">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72BADB5D2+29090]
+	(No symbol) [0x00007FF72BA4E689]
+	(No symbol) [0x00007FF72B90B1CA]
+	(No symbol) [0x00007FF72B8DFAF5]
+	(No symbol) [0x00007FF72B98E2E7]
+	(No symbol) [0x00007FF72B9A5EE1]
+	(No symbol) [0x00007FF72B986493]
+	(No symbol) [0x00007FF72B9509B1]
+	(No symbol) [0x00007FF72B951B11]
+	GetHandleVerifier [0x00007FF72BDF8C5D+3295277]
+	GetHandleVerifier [0x00007FF72BE44843+3605523]
+	GetHandleVerifier [0x00007FF72BE3A707+3564247]
+	GetHandleVerifier [0x00007FF72BB96EB6+797318]
+	(No symbol) [0x00007FF72BA5980F]
+	(No symbol) [0x00007FF72BA553F4]
+	(No symbol) [0x00007FF72BA55580]
+	(No symbol) [0x00007FF72BA44A1F]
+	BaseThreadInitThunk [0x00007FFEEA48257D+29]
+	RtlUserThreadStart [0x00007FFEEC72AF28+40]
+</status>
+</kw>
+<kw name="add product to cart" owner="cart_features">
+<status status="NOT RUN" start="2024-09-06T16:11:33.140372" elapsed="0.000000"/>
+</kw>
+<kw name="Click header cart icon" owner="common">
+<status status="NOT RUN" start="2024-09-06T16:11:33.141167" elapsed="0.000000"/>
+</kw>
+<kw name="Input delivery info" owner="delivery_features">
+<arg>${name.name_input}</arg>
+<arg>${surname.surname_input}</arg>
+<arg>${address.address_input}</arg>
+<arg>${phone.phone_input}</arg>
+<arg>${mail.mail_input}</arg>
+<status status="NOT RUN" start="2024-09-06T16:11:33.142180" elapsed="0.000000"/>
+</kw>
+<kw name="Payment Complete" owner="payment_features">
+<arg>${cardnumber.card_input}</arg>
+<arg>${exp.exp_input}</arg>
+<arg>${cvc.cvc_input}</arg>
+<arg>${owner.owner_input}</arg>
+<status status="NOT RUN" start="2024-09-06T16:11:33.142180" elapsed="0.000000"/>
+</kw>
+<kw name="Get order id" owner="payment_page">
+<var>${order_id}</var>
+<status status="NOT RUN" start="2024-09-06T16:11:33.143179" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${order_id}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-06T16:11:33.143179" elapsed="0.000000"/>
+</kw>
+<kw name="Check your order" owner="checkorder_page">
+<arg>${order_id}</arg>
+<status status="NOT RUN" start="2024-09-06T16:11:33.144176" elapsed="0.000000"/>
+</kw>
+<kw name="Clear all browser" owner="common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-09-06T16:11:33.145244" elapsed="2.179986"/>
+</kw>
+<status status="PASS" start="2024-09-06T16:11:33.144176" elapsed="2.182054"/>
+</kw>
+<status status="FAIL" start="2024-09-06T16:11:26.582525" elapsed="8.744703">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72BADB5D2+29090]
+	(No symbol) [0x00007FF72BA4E689]
+	(No symbol) [0x00007FF72B90B1CA]
+	(No symbol) [0x00007FF72B8DFAF5]
+	(No symbol) [0x00007FF72B98E2E7]
+	(No symbol) [0x00007FF72B9A5EE1]
+	(No symbol) [0x00007FF72B986493]
+	(No symbol) [0x00007FF72B9509B1]
+	(No symbol) [0x00007FF72B951B11]
+	GetHandleVerifier [0x00007FF72BDF8C5D+3295277]
+	GetHandleVerifier [0x00007FF72BE44843+3605523]
+	GetHandleVerifier [0x00007FF72BE3A707+3564247]
+	GetHandleVerifier [0x00007FF72BB96EB6+797318]
+	(No symbol) [0x00007FF72BA5980F]
+	(No symbol) [0x00007FF72BA553F4]
+	(No symbol) [0x00007FF72BA55580]
+	(No symbol) [0x00007FF72BA44A1F]
+	BaseThreadInitThunk [0x00007FFEEA48257D+29]
+	RtlUserThreadStart [0x00007FFEEC72AF28+40]
+</status>
+</test>
+<status status="FAIL" start="2024-09-06T16:11:26.388432" elapsed="8.941798"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tc01">Tc01</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-06T16:11:26.568482" level="WARN">Error in file 'C:\Users\Thanapoom.t\Desktop\Doppiotech\keywords\pages\payment_page.robot' on line 40: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-09-06T16:11:33.130870" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72BADB5D2+29090]
+	(No symbol) [0x00007FF72BA4E689]
+	(No symbol) [0x00007FF72B90B1CA]
+	(No symbol) [0x00007FF72B8DFAF5]
+	(No symbol) [0x00007FF72B98E2E7]
+	(No symbol) [0x00007FF72B9A5EE1]
+	(No symbol) [0x00007FF72B986493]
+	(No symbol) [0x00007FF72B9509B1]
+	(No symbol) [0x00007FF72B951B11]
+	GetHandleVerifier [0x00007FF72BDF8C5D+3295277]
+	GetHandleVerifier [0x00007FF72BE44843+3605523]
+	GetHandleVerifier [0x00007FF72BE3A707+3564247]
+	GetHandleVerifier [0x00007FF72BB96EB6+797318]
+	(No symbol) [0x00007FF72BA5980F]
+	(No symbol) [0x00007FF72BA553F4]
+	(No symbol) [0x00007FF72BA55580]
+	(No symbol) [0x00007FF72BA44A1F]
+	BaseThreadInitThunk [0x00007FFEEA48257D+29]
+	RtlUserThreadStart [0x00007FFEEC72AF28+40]
+</msg>
+</errors>
+</robot>

@@ -1,0 +1,40 @@
+
+user:
+  username_input: tiqsc@gmail.com
+password:
+  password_input: TTtt123*
+
+pd_n:
+  product_name: phone
+
+
+name:
+  name_input: Tine
+surname:
+  surname_input:  Thanapoom
+address:
+  address_input:  32/1 50210
+phone:
+  phone_input:  0876325894
+mail:
+  mail_input: Tinee@gmail.com
+
+
+cardnumber:
+  card_input: '4111111111111111'
+exp:
+  exp_input:  12/2569
+cvc:
+  cvc_input:  '123'
+owner:
+  owner_input:  tine doppee
+
+
+email:
+  email_input:  tiqsc@gmail.com
+passregis:
+  passregis_input:  TTtt123*
+conpass:
+  confirm_input:    TTtt123*
+
+  
