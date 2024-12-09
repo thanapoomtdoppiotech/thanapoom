@@ -17,6 +17,12 @@ Click header person icon
 
 Click header cart icon
     SeleniumLibrary.Click Element                       ${header_locator.cart_icon} 
+
+Generate random email
+    ${random_prefix}=    Generate Random String    8    Test1234567890
+    ${domain}=    Set Variable    gmail
+    ${unique_email}=    Set Variable    ${random_prefix}@${domain}.com
+    RETURN    ${unique_email}
      
 *** Variables ***
 ${common.click_popup}                   xpath=//*[@class='css-eq3tly ant-btn ant-btn-primary']
