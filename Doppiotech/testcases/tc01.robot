@@ -17,5 +17,5 @@ tc01-testlocator
     #${order_id} payment_page.Get order id
     #log   ${order_id}
     checkorder_page.Check your order 
-          
+    #test      
        
