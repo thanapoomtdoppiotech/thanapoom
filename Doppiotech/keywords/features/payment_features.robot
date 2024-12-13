@@ -3,7 +3,7 @@ Resource        ../import.robot
 
 
 *** Keywords ***
-Payment Complete
+Input payment detail and confirm payment
     [Arguments]    ${cardnumber}    ${exp}    ${cvc}    ${cardowner}
     payment_page.Go to payment
     payment_page.Input cardnumber                ${cardnumber}

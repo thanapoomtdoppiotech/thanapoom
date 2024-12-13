@@ -9,13 +9,13 @@ tc01-testlocator
     Set Selenium Speed    0.1
     common.Open Doppee web
     common.Click header person icon 
-    register_features.Register success           ${register_user}    ${passregis.passregis_input}    ${conpass.confirm_input}
-    #login_features.user login success            ${user.username_input}    ${password.password_input} 
-    search_features.Search product               ${pd_n.product_name}
+    register_features.Register success           ${register_user}    ${register.password}    ${register.confirm_password}
+    #login_features.user login success            ${login.username}    ${login.password} 
+    search_features.Search product               ${product.product_name}
     cart_features.add product to cart
     common.Click header cart icon
-    delivery_features.Input delivery info        ${name.name_input}    ${surname.surname_input}    ${address.address_input}    ${phone.phone_input}    ${mail.mail_input}
-    Payment_features.Payment Complete            ${cardnumber.card_input}    ${exp.exp_input}    ${cvc.cvc_input}    ${owner.owner_input}
-    checkorder_page.Check your order 
+    delivery_features.Input delivery info        ${delivery_info.name}    ${delivery_info.surname}    ${delivery_info.address}    ${delivery_info.phone}    ${delivery_info.email}
+    Payment_features.Input payment detail and confirm payment           ${payment_detail.card_number}    ${payment_detail.expiration_date}    ${payment_detail.cv_code}    ${payment_detail.card_owner}
+    order_page.Check your order 
           
        
