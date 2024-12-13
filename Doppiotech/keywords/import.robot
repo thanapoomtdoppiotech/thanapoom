@@ -15,7 +15,7 @@ Resource    ./pages/cart_page.robot
 Resource    ./pages/delivery_page.robot
 Resource    ./pages/payment_page.robot
 Resource    ./pages/register_page.robot
-Resource    ./pages/checkorder_page.robot
+Resource    ./pages/order_page.robot
 
 
 Resource    ./locators/login_locator.robot
@@ -24,7 +24,7 @@ Resource    ./locators/cart_locator.robot
 Resource    ./locators/delivery_locator.robot
 Resource    ./locators/payment_locator.robot
 Resource    ./locators/register_locator.robot
-Resource    ./locators/checkorder_locator.robot
+Resource    ./locators/order_locator.robot
 
 
 Resource    ./features/login_features.robot
